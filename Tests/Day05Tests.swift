@@ -47,7 +47,6 @@ final class Day05Tests: XCTestCase {
     
     func testPart1_test_data() throws {
         let challenge = Day05(data: self.testData)
-        print(challenge.part1())
         XCTAssertEqual(challenge.part1() as? Int, 35)
     }
     
@@ -62,9 +61,9 @@ final class Day05Tests: XCTestCase {
         XCTAssertEqual(result as? Int, 46)
     }
     
-//    func test_part_2_real_data() throws {
-//        let challenge = Day05()
-//        let result = await challenge.part2()
-//        print(result)
-//    }
+    func test_part_2_real_data() async throws {
+        let challenge = Day05()
+        let result = await challenge.part2()
+        print(result)
+    }
 }
